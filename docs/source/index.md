@@ -1,8 +1,3 @@
----
-banner: _static/landing.png
-banner_height: "40vh"
----
-
 ```{toctree}
 ---
 hidden: true
