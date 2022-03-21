@@ -3,8 +3,6 @@
 """The setup script."""
 from os import path
 from setuptools import setup, find_packages
-import sys
-import versioneer
 
 here = path.abspath(path.dirname(__file__))
 
@@ -40,12 +38,9 @@ setup(
     name='sdex_group',
     packages=find_packages(include=['sdex_group', 'sdex_group.*']),
     test_suite='tests',
-    url='https://github.com/ronpandolfi/sdex_group',
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    url='https://github.com/lbl-sdex/sdex_group',
     zip_safe=False,
     extras_require={
-        'tests': ['pytest', 'codecov', 'pytest-cov'],
         'docs': ['sphinx', 'sphinx-rtd-theme', 'myst-parser', 'myst-nb', 'sphinx-panels', 'autodocs']
     }
 )
