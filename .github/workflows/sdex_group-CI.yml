@@ -12,6 +12,10 @@ jobs:
   build:
     name: Push Sphinx Pages
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ '3.9' ]
+
     steps:
       - uses: actions/checkout@v2
 
