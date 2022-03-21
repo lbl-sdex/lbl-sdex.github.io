@@ -1,6 +1,4 @@
 from datetime import datetime
-from sdex_group import _version
-
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -25,7 +23,6 @@ project = 'SDEX Group'
 
 copyright = f'{datetime.now().year}, ' + 'Ronald J Pandolfi'
 author = 'Ronald J Pandolfi'
-version = _version.get_versions()['version']
 
 
 # -- General configuration ---------------------------------------------------
