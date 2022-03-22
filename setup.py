@@ -46,6 +46,6 @@ setup(
     url='https://github.com/lbl-sdex/sdex_group',
     zip_safe=False,
     extras_require={
-        'docs': requirements_docs
+        'docs': ['sphinx', 'sphinx-rtd-theme', 'myst-parser', 'myst-nb', 'sphinx-panels', 'autodocs']
     }
 )

@@ -34,7 +34,8 @@ extensions = [
     'myst_nb',
     'sphinx_panels',
     'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon'
+    'sphinx.ext.napoleon',
+    'sphinx.ext.githubpages'
 ]
 
 # MyST extensions

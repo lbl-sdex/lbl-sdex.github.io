@@ -25,12 +25,13 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install -e .
+        run: pip install -e .[docs]
 
-      - uses: ronpandolfi/sphinx-pages@master
+      - name: Build and Commit
+        uses: sphinx-notes/pages@v2
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          create_readme: true
-          source_dir: source
+          branch: gh-pages
