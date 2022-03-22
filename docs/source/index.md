@@ -2,9 +2,9 @@
 ---
 hidden: true
 maxdepth: 2
-caption: API
+caption: About
 ---
-api/sdex_group.md
+index.md
 ```
 
 # SDEX Group
