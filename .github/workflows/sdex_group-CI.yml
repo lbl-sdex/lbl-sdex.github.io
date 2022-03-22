@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install -e .[docs]
+          pip install -e .
 
       - uses: ronpandolfi/sphinx-pages@master
         with:
