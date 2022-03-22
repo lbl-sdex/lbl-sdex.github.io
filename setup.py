@@ -14,11 +14,6 @@ with open(path.join(here, 'requirements.txt')) as requirements_file:
     requirements = [line for line in requirements_file.read().splitlines()
                     if not line.startswith('#')]
 
-with open(path.join(here, 'requirements-docs.txt')) as requirements_file:
-    # Parse requirements.txt, ignoring any commented-out lines.
-    requirements_docs = [line for line in requirements_file.read().splitlines()
-                    if not line.startswith('#')]
-
 setup(
     author="Ronald J Pandolfi",
     author_email='ronpandolfi@lbl.gov',
