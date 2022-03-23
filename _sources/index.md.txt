@@ -1,10 +1,11 @@
 ```{toctree}
 ---
 hidden: true
-maxdepth: 2
+maxdepth: 1
+titlesonly: true
 caption: About
 ---
-index.md
+people/index.md
 ```
 
 # SDEX Group
