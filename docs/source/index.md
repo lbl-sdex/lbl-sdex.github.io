@@ -6,6 +6,7 @@ titlesonly: true
 caption: About
 ---
 people/index.md
+guidelines/index.md
 ```
 
 # SDEX Group
