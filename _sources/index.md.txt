@@ -6,6 +6,8 @@ titlesonly: true
 caption: About
 ---
 people/index.md
+best-practices/index.md
+software-techniques/index.md
 ```
 
 # SDEX Group
