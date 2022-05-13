@@ -3,7 +3,9 @@
 A well-structured and maintainable python project includes very many components, requiring broad and advanced knowledge.
 However, tools exist to dramatically simplify this process. The `cookiecutter` tool can allow you to initialize
 your project structure with all these components in a good initial state. From there you can explore each component at
-your own pace as needed. This process might also be used to improve an existing project with some care.
+your own pace as needed. This process might also be used to improve an existing project with some care. Our custom 
+cookiecutter facilitates better programming practices by incorporating CI (GitHub Actions), code metrics (CodeCov), and 
+documentation (Sphinx + ReadTheDocs) boilerplate to reduce the barrier-to-entry for setting up these types of tools.
 
 ## A bit about `cookiecutter`
 
@@ -34,15 +36,21 @@ Your new project directory will then be generated!
 
 ## What's in this cookiecutter?
 
-- Standard python package repository structure
+- Standard Python package directory structure that maps to your projects package, subpackages, and modules
+- A `setup.py` file and related files that are used for packaging your project
+- An empty `requirements.txt` file where you can add python package dependencies
+- Standard Python `.gitignore` file
+- A workflow file that can be used by GitHub Actions (a continuous integration tool) to:
+      - Build and test your code with coverage, upload coverage, and report its status
+      - Facilitate automatic PyPI releases and GitHub Releases when pushing tags
 - Testing setup with unittest and python setup.py test or pytest
-- versioneer: updates your version numbers everywhere at once
+- versioneer: automatically updates your version numbers everywhere at once
 - Github actions: starter workflow to automate continuous integration, testing, and deployment
 - Tox testing: Setup to easily test for Python 3.6, 3.7, 3.8
 - Codecov: See how much of your code is covered by tests
 - Sphinx docs: Documentation ready for generation with, for example, Read the Docs
 - MyST extension: Adds Markdown support to Sphinx
-- Auto-release to PyPI when you push a new tag to master (optional)
+- A set of licenses to choose from and attach to the project
 
 Not included but recommended:
 
