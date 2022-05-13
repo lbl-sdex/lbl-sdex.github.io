@@ -41,8 +41,8 @@ Your new project directory will then be generated!
 - An empty `requirements.txt` file where you can add python package dependencies
 - Standard Python `.gitignore` file
 - A workflow file that can be used by GitHub Actions (a continuous integration tool) to:
-      - Build and test your code with coverage, upload coverage, and report its status
-      - Facilitate automatic PyPI releases and GitHub Releases when pushing tags
+  - Build and test your code with coverage, upload coverage, and report its status
+  - Facilitate automatic PyPI releases and GitHub Releases when pushing tags
 - Testing setup with unittest and python setup.py test or pytest
 - versioneer: automatically updates your version numbers everywhere at once
 - Github actions: starter workflow to automate continuous integration, testing, and deployment
